@@ -225,6 +225,12 @@
 
         /* RESPONSIVIDADE */
         @media (max-width: 768px) {
+            .menuToggle {
+    display: flex;
+    color: #333;
+    position: relative;
+    z-index: 2001; /* valor maior que o nav ul */
+  }
             .contact-container {
                 padding: 20px;
                 width: 90%;
