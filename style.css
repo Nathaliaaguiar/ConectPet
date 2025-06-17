@@ -113,12 +113,12 @@ nav a {
     position: relative;
     z-index: 2001; /* valor maior que o nav ul */
   }
-.menu .redes-coloridas {
+  .menu .redes-coloridas {
     display: flex;
     justify-content: center;
     gap: 10px;
-     font-size: 3.2rem; /* tamanho maior para os ícones no menu */
-  padding: 30px;
+    font-size: 3.2rem; /* tamanho maior para os ícones no menu */
+    padding: 30px;
   }
   nav ul {
     display: none;
@@ -136,7 +136,7 @@ nav a {
     z-index: 1000;
     gap: 40px;
     font-size: 2.9rem;
-    margin-top:-10px;
+    margin-top: -10px;
   }
 
   nav ul.active {
@@ -145,8 +145,7 @@ nav a {
 }
 
 .banner {
-  background: url("https://images.unsplash.com/photo-1574158622682-e40e69881006")
-    center/cover no-repeat;
+  background: url("../img/banner.jpeg") center/cover no-repeat;
   color: var(--branco);
   padding: 100px 0;
   text-align: center;
@@ -240,8 +239,6 @@ footer {
   margin: 0 10px;
   transition: 0.3s;
 }
-
-
 
 .facebook {
   background-color: #3b5998;
