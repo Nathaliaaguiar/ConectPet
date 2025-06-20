@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,7 +16,7 @@
 <body>
   <header>
     <div class="container header-flex">
-      <img src="img/Logo.png" alt="Logo ConectaPet" class="logo"/>
+
       <nav>
          <div class="menuToggle" id="menu-toggle">
             <div class="linha linha1"></div>
@@ -37,28 +36,59 @@
                 <h1>Entre em Contato</h1>
                 <p>Tem alguma dúvida ou sugestão? Mande uma mensagem!</p>
             </div>
-
-            <form id="contactForm" class="contact-form">
+            <!-- FORMULÁRIO -->
+            <form
+              id="contactForm"
+              class="contact-form"
+              action="https://formspree.io/f/mdkzldkg"
+              method="POST"
+            >
                 <div class="form-group">
                     <label for="name">Nome Completo</label>
-                    <input type="text" id="name" class="form-control" required placeholder="Digite seu nome">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      required
+                      placeholder="Digite seu nome"
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" class="form-control" required placeholder="seuemail@exemplo.com">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      required
+                      placeholder="seuemail@exemplo.com"
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="subject">Assunto</label>
-                    <input type="text" id="subject" class="form-control" placeholder="Sobre o que deseja falar?">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                      placeholder="Sobre o que deseja falar?"
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="message">Mensagem</label>
-                    <textarea id="message" class="form-control" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      required
+                      placeholder="Escreva sua mensagem aqui..."
+                    ></textarea>
                 </div>
-
+                <input type="hidden" name="_next" value="https://conect-pet.vercel.app/">
                 <button type="submit" class="submit-btn">Enviar Mensagem</button>
             </form>
 
@@ -72,20 +102,20 @@
                 <div class="info-card">
                     <i class="fas fa-phone"></i>
                     <h3>Telefone</h3>
-                    <p>(21) 98765-4321</p>
+                    <p>(21) 987840612</p>
                 </div>
 
                 <div class="info-card">
                     <i class="fas fa-envelope"></i>
                     <h3>E-mail</h3>
-                    <p>contato@conectapet.com</p>
+                    <p>moniquealves.terapeuta@gmail.com</p>
                 </div>
 
                 <div class="info-card whatsapp">
                     <i class="fab fa-whatsapp"></i>
                     <h3>WhatsApp</h3>
-                    <p>(21) 98765-4321</p>
-                    <a href="https://wa.me/5521987654321" class="whatsapp-link" target="_blank">
+                    <p>(21) 987840612</p>
+                    <a href="https://wa.me/5521987840612" class="whatsapp-link" target="_blank">
                         <i class="fab fa-whatsapp"></i> Enviar Mensagem
                     </a>
                 </div>
@@ -95,7 +125,7 @@
 
       <footer>
   <div class="container">
-    <p>&copy; 2025 ConectaPet - Amor que Conecta</p><br>
+    <p>© 2025 ConectaPet - Amor que Conecta</p><br>
     <div class="redes-coloridas">
   <a href="https://facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
   <a href="https://instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
