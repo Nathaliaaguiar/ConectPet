@@ -6,4 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.toggle("active");
     menuToggle.classList.toggle("ativo");
   });
+
+  document
+    .querySelectorAll(
+      'nav ul li a[href="#adocao"], nav ul li a[href="#passos"]'
+    )
+    .forEach((link) => {
+      link.addEventListener("click", function () {
+        menu.classList.remove("active");
+        menuToggle.classList.remove("ativo");
+      });
+    });
 });
