@@ -1,138 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sobre - ConectaPet</title>
-  <link rel="stylesheet" href="estilos/contato.css" />
-  <link rel="stylesheet" href="style.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <header>
-    <div class="container header-flex">
-
-      <nav>
-         <div class="menuToggle" id="menu-toggle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - ConectaPet</title>
+    <link rel="stylesheet" href="estilos/contato.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container header-flex">
+        <img src="img/Logo.png" alt="Logo ConectaPet" class="logo" />
+        <nav>
+          <div class="menuToggle" id="menu-toggle">
             <div class="linha linha1"></div>
             <div class="linha linha2"></div>
             <div class="linha linha3"></div>
           </div>
-        <ul id="menu" class="menu">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Adoção</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li>
+              <div class="redes-coloridas">
+                <a href="https://facebook.com" class="facebook" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/abrigodosamores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  class="instagram"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/5521987840612"
+                  class="ewhatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-        <section class="contact-container">
-            <div class="contact-header">
-                <h1>Entre em Contato</h1>
-                <p>Tem alguma dúvida ou sugestão? Mande uma mensagem!</p>
-            </div>
-            <!-- FORMULÁRIO -->
-            <form
-              id="contactForm"
-              class="contact-form"
-              action="https://formspree.io/f/xeoklzav"
-              method="POST"
+      <section class="contact-container">
+        <div class="contact-header">
+          <h1>Entre em Contato</h1>
+          <p>Tem alguma dúvida ou sugestão? Mande uma mensagem!</p>
+        </div>
+        <!-- FORMULÁRIO -->
+        <form
+          id="contactForm"
+          class="contact-form"
+          action="https://formspree.io/f/xeoklzav"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+              placeholder="Digite seu nome"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+              placeholder="seuemail@exemplo.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="form-control"
+              placeholder="Sobre o que deseja falar?"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              required
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+          </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://conect-pet.vercel.app/"
+          />
+          <button type="submit" class="submit-btn">Enviar Mensagem</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Endereço</h3>
+            <p>Rio de Janeiro, RJ - Brasil</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <h3>Telefone</h3>
+            <p>(21) 987840612</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>E-mail</h3>
+            <p>gatildosamores@gmail.com</p>
+          </div>
+
+          <div class="info-card whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <p>(21) 987840612</p>
+            <a
+              href="https://wa.me/5521987840612"
+              class="whatsapp-link"
+              target="_blank"
             >
-                <div class="form-group">
-                    <label for="name">Nome Completo</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      class="form-control"
-                      required
-                      placeholder="Digite seu nome"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="form-control"
-                      required
-                      placeholder="seuemail@exemplo.com"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Assunto</label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      class="form-control"
-                      placeholder="Sobre o que deseja falar?"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      class="form-control"
-                      required
-                      placeholder="Escreva sua mensagem aqui..."
-                    ></textarea>
-                </div>
-                <input type="hidden" name="_next" value="https://conect-pet.vercel.app/">
-                <button type="submit" class="submit-btn">Enviar Mensagem</button>
-            </form>
-
-            <div class="contact-info">
-                <div class="info-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Endereço</h3>
-                    <p>Rio de Janeiro, RJ - Brasil</p>
-                </div>
-
-                <div class="info-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Telefone</h3>
-                    <p>(21) 987840612</p>
-                </div>
-
-                <div class="info-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>E-mail</h3>
-                    <p>gatildosamores@gmail.com</p>
-                </div>
-
-                <div class="info-card whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    <h3>WhatsApp</h3>
-                    <p>(21) 987840612</p>
-                    <a href="https://wa.me/5521987840612" class="whatsapp-link" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Enviar Mensagem
-                    </a>
-                </div>
-            </div>
-        </section>
+              <i class="fab fa-whatsapp"></i> Enviar Mensagem
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
-      <footer>
-  <div class="container">
-    <p>© 2025 ConectaPet - Amor que Conecta</p><br>
-    <div class="redes-coloridas">
-  <a href="https://facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://wa.me/5599999999999" class="ewhatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</div>
-
-  </div>
-</footer>
-</body>
+    <footer>
+      <div class="container">
+        <p>© 2025 ConectaPet - Amor que Conecta</p>
+        <br />
+        <div class="redes-coloridas">
+          <a href="https://facebook.com" class="facebook" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://instagram.com" class="instagram" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/5599999999999"
+            class="ewhatsapp"
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
